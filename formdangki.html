@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - MovieFlix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: white; /* Màu vàng */
+            --dark-bg: #001f3f; /* Màu xanh đen */
+            --text-color: #fff;
+            --text-secondary: #aaa;
+            --highlight: #f5f5f1;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                            url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/VN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+        }
+        
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 31, 63, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #e6b800;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            background-color: transparent;
+            color: var(--text-color);
+        }
+        
+        .form-group label {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: var(--dark-bg);
+            padding: 0 5px;
+            color: var(--primary-color);
+            font-size: 14px;
+        }
+        
+        .btn-signup {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-signup:hover {
+            background-color: #e6b800;
+        }
+        
+        .footer-text {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .footer-text a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Đăng Ký</h2>
+        
+        <form>
+            <div class="form-group">
+                <input type="text" id="username" name="username" required>
+                <label for="username">Tên người dùng</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Mật khẩu</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <label for="confirm-password">Xác nhận mật khẩu</label>
+            </div>
+            
+            <button type="submit" class="btn btn-signup">Đăng ký</button>
+        </form>
+        
+        <p class="footer-text">
+            Bằng việc đăng ký, bạn đồng ý với <a href="#">Điều khoản sử dụng</a> 
+            và <a href="#">Chính sách bảo mật</a> của chúng tôi. 
+        </p>
+        
+        <p class="footer-text">
+            Đã có tài khoản? <a href="formdangnhap.html">Đăng nhập</a>
+        </p>
+    </div>
+</body>
+</html></p></div>
